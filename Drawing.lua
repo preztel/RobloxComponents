@@ -3,7 +3,7 @@ local Library = {}
 local CreateRenderObject = getupvalue(Drawing.new, 1) ~= nil and getupvalue(Drawing.new, 1) or Drawing.new
 local SetRenderProperty = setrenderproperty or getupvalue(getupvalue(Drawing.new, 7).__newindex, 4)
 local GetRenderProperty = getrenderproperty or getupvalue(getupvalue(Drawing.new, 7).__index, 4)
-local DestroyRenderObject = getupvalue(getupvalue(Drawing.new, 7).__index, 3) ~= nil and getupvalue(getupvalue(Drawing.new, 7).__index, 3) or Drawing.Destroy
+local DestroyRenderObject = getupvalue(getupvalue(Drawing.new, 7).__index, 3) ~= nil and getupvalue(getupvalue(Drawing.new, 7).__index, 3) or Drawing.Remove
 
 local UserInput = game:GetService("UserInputService")
 
