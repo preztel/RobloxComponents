@@ -59,6 +59,10 @@ function Library.new(InstanceType, InstanceProperties, InstanceParent)
     Utility.Edit = function(Name, Value)
         SetRenderProperty(Instance, tostring(Name), Value)
     end
+    
+    Utility.Get = function(Instance, Name)
+        GetRenderProperty(Instance, tostring(Name))
+    end
 
     if InstanceParent then
         InstanceParent[#InstanceParent + 1] = Instance
