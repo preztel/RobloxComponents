@@ -60,7 +60,7 @@ function Library.new(InstanceType, InstanceProperties, InstanceParent)
         SetRenderProperty(Instance, tostring(Name), Value)
     end
     
-    Utility.Get = function(Instance, Name)
+    Utility.Get = function(Name)
         GetRenderProperty(Instance, tostring(Name))
     end
 
