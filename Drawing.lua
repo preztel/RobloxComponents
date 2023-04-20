@@ -30,7 +30,7 @@ function Library.new(InstanceType, InstanceProperties, InstanceParent)
         SetRenderProperty(Instance, "Thickness", 0)
     elseif InstanceType == "Text" then
         SetRenderProperty(Instance, "Size", 13)
-        SetRenderProperty(Instance, "Font", 1)
+        SetRenderProperty(Instance, "Font", Drawing.Fonts.Plex)
         SetRenderProperty(Instance, "Color", Color3.fromRGB(255, 255, 255))
     end
 
